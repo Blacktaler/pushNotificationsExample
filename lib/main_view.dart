@@ -47,7 +47,7 @@ class _MainViewState extends State<MainView> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        child: Text(message.toString()),
+        child: _resolved? Text(message.toString()):Text("good bad"),
       ),
     );
   }
